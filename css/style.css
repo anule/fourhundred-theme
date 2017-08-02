@@ -1,0 +1,7 @@
+/* For the time being, this only styling will be to distinguish the buttons from each other */
+
+.button {
+  border: 1px solid black;
+  margin: 10px;
+}
+
