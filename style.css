@@ -1,12 +1,9 @@
-/* For the time being, this only styling will be to distinguish the buttons from each other */
-
-.button {
-  border: 1px solid black;
-  margin: 10px;
-}
-
-
-footer {
-  padding: 50px 0;
-  background-color: rgb(98, 171, 203);
-}
+/*
+Theme Name: Four Hundred
+Author: Anule Ndukwu
+Author URI: https://anule.github.io
+Description: Custom WordPress theme designed for 400 North Medical Center. Made
+Version: 0.0.1
+Tags: one column
+Text Domain: fourhundred
+*/
