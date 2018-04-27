@@ -2,8 +2,12 @@
 Theme Name: Four Hundred
 Author: Anule Ndukwu
 Author URI: https://anule.github.io
-Description: Custom WordPress theme designed for 400 North Medical Center. Made
+Description: Custom WordPress theme designed for 400 North Medical Center.
 Version: 0.0.1
 Tags: one column
 Text Domain: fourhundred
 */
+
+* {
+  border: 1px solid #000000;
+}

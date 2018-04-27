@@ -11,11 +11,10 @@
   </head>
 
   <body>
-    <!-- navigation header-->
     <div class='container'>
     <header>
-      <a href="index.html"><img src="#" alt="400 North Medical Center logo"></a>
-      <nav>
+      <nav class="navbar d-print">
+      <a class="navbar-brand" href="<?php echo get_bloginfo(wpurl); ?>">400 North Medical Center</a>
           <a href="<?php echo get_bloginfo(wpurl); ?>">Home</a>
           <?php wp_list_pages("&title_li=");?>
       </nav>
