@@ -13,7 +13,15 @@
 </div>
 
 <div class="row" id="hours">
-
+  <div class="col-sm-12 col-md-4">
+      These are our hours of operation
+  </div>
+  <div class="col-sm-12 col-md-8">
+      *exhaustive list of our hours of operation*
+  </div>
 </div>
 
+<div class="row">
+    learn more about payment here
+</div>
 <?php get_footer();?>
