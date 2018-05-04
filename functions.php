@@ -32,23 +32,30 @@ function hours_operation_page() {?>
 // display fields on page
 function hours_operation_page_setup() {
     add_settings_section('section', 'Operating Hours', null, 'hours-operations');
-    add_settings_field('open', 'Opening Hours', 'open_setting', 'hours-operations', 'section');
-    add_settings_field('closed', 'Closing Hours', 'closed_setting', 'hours-operations', 'section');
+    add_settings_field('open', 'Opening Hours', 'setting_open', 'hours-operations', 'section');
+    add_settings_field('closed', 'Closing Hours', 'setting_closed', 'hours-operations', 'section');
+    add_settings_field('holidays', 'Special Holidays', 'setting_holidays', 'hours-operations', 'section');
 
     register_setting('section', 'open');
     register_setting('section', 'closed');
+    register_setting('section', 'holidays');
 }
 add_action('admin_init', 'hours_operation_page_setup');
 
 // "Open" input field
-function open_setting() { ?>
+function setting_open() { ?>
     <input type="number" name="open" id="open" value="<?php echo get_option('open'); ?>">
 <?php }
 
 
-// "Closed" fields
-function closed_setting() { ?>
+// "Closed" input field
+function setting_closed() { ?>
     <input type="number" name="closed" id="closed" value="<?php echo get_option('closed'); ?>">
+<?php }
+
+// "Special holidays" input field
+function setting_holidays() { ?>
+    <textarea name="holidays" id="holidays" placeholder="List the holidays when the office is closed. Ex: Labor Day, July 4th" spellcheck="true" wrap="soft" cols="50"></textarea>
 <?php }
 
 ?>
