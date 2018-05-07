@@ -8,17 +8,17 @@
   </div>
 
   <div class="col-sm-12 col-md-4">
-    this is how you learn all about us
+    <h1 class="desc" id="about-desc">Learn About Us!</h1>
   </div>
 </div>
 
 <div class="row hours">
-  <div class="col-sm-12 col-md-5">
-      <h2>These are our hours of operation</h2>
+  <div class="col-sm-12 col-md-5" id="desc-parent">
+      <h1 class="desc" id="hours-desc">Hours of Operation</h1>
   </div>
-  <div class="col-sm-12 col-md-6">
-      <table class="table">
-        <thead>
+  <div class="col-sm-12 col-md-7" id="table">
+      <table class="table table-bordered table-sm">
+        <thead class="thead-light">
             <tr>
                 <th scope="col">Days of the Week</th>
                 <th scope="col">Open</th>
@@ -38,10 +38,14 @@
             </tr>
         </tbody>
       </table>
-  </div>
+      <div id="holidays">
+          <h4>Holidays</h4>
+          <p>The office is closed on the following days: <?php echo get_option('holidays'); ?></p>
+      </div>
+    </div>
 </div>
 
 <div class="row payment">
-    learn more about payment here
+    <h1>learn more about payment here</h1>
 </div>
 <?php get_footer();?>
