@@ -35,10 +35,12 @@ function hours_operation_page_setup() {
     add_settings_section('section', 'Operating Hours', null, 'hours-operations');
     add_settings_field('open', 'Opening Hours', 'setting_open', 'hours-operations', 'section');
     add_settings_field('closed', 'Closing Hours', 'setting_closed', 'hours-operations', 'section');
+    add_settings_field('friday-closed', 'Friday Closing', 'setting_friday_closed', 'hours-operations', 'section');
     add_settings_field('holidays', 'Special Holidays', 'setting_holidays', 'hours-operations', 'section');
 
     register_setting('section', 'open');
     register_setting('section', 'closed');
+    register_setting('section', 'friday-closed');
     register_setting('section', 'holidays');
 }
 add_action('admin_init', 'hours_operation_page_setup');
@@ -52,6 +54,11 @@ function setting_open() { ?>
 // "Closed" input field
 function setting_closed() { ?>
     <input type="number" name="closed" id="closed" value="<?php echo get_option('closed'); ?>">
+<?php }
+
+// "Friday Closed" input field
+function setting_friday_closed() { ?>
+    <input type="number" name="friday-closed" id="friday-closed" value="<?php echo get_option('friday-closed'); ?>">
 <?php }
 
 // "Special holidays" input field

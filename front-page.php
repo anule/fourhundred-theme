@@ -17,7 +17,27 @@
       <h2>These are our hours of operation</h2>
   </div>
   <div class="col-sm-12 col-md-6">
-      *exhaustive list of our hours of operation*
+      <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Days of the Week</th>
+                <th scope="col">Open</th>
+                <th scope="col">Closed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Monday - Thursday</td>
+                <td><?php echo get_option('open'); ?> am</td>
+                <td><?php echo get_option('closed');?> pm</td>
+            </tr>
+            <tr>
+                <td scope="row">Friday</td>
+                <td><?php echo get_option('open'); ?> am</td>
+                <td><?php echo get_option('friday-closed');?> pm</td>
+            </tr>
+        </tbody>
+      </table>
   </div>
 </div>
 
