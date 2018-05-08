@@ -66,4 +66,7 @@ function setting_holidays() { ?>
     <textarea name="holidays" id="holidays" placeholder="List the holidays when the office is closed. Ex: Labor Day, July 4th" spellcheck="true" wrap="soft" cols="50"></textarea>
 <?php }
 
+// Support featured images
+add_theme_support('post-thumbnails')
+
 ?>
