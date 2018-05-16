@@ -67,6 +67,24 @@ function setting_holidays() { ?>
 <?php }
 
 // Support featured images
-add_theme_support('post-thumbnails')
+add_theme_support('post-thumbnails');
+
+// Create staff post type
+function create_my_custom_post() {
+  register_post_type('staff',
+    array('labels' => array(
+      'name' => __( 'Staff' ),
+      'singular_name' => __( 'Staff' ),
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'supports' => array(
+      'title',
+      'editor',
+      'thumbnail',
+    ),
+  ));
+}
+add_action('init', 'create_my_custom_post');
 
 ?>
