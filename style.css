@@ -23,6 +23,15 @@ nav li {
 /*
 * Front page
 */
+
+.jumbotron {
+  height: 24rem;
+  background-color: lavender;
+}
+.jumbotron:hover {
+  background-color: plum;
+}
+
 .about,
 .payment {
   height: 10rem;
@@ -37,7 +46,11 @@ nav li {
 #about-desc {
   text-align: left;
 }
-
+#about-blurb {
+  font-size: 2rem;
+  text-align: left;
+  background-color: lavenderblush;
+}
 .hours {
   height: 15rem;
   margin: 3.5rem 2rem;
@@ -49,12 +62,12 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 0.5px solid black;
-  border-radius: 5px;
+  /* border: 0.5px solid black;
+  border-radius: 5px; */
 }
 
 #hours-desc {
-  text-align: right;
+  text-align: center;
   padding-right: 5px;
 }
 
@@ -71,8 +84,13 @@ nav li {
 *            **** MEDIA QUERIES ****
 */
 
+@media only screen and (min-width: 320px) {
+}
 @media only screen and (max-width: 767.98px) {
   /* FRONT PAGE */
+  .jumbotron {
+    height: 12rem;
+  }
   .hours {
     flex-direction: row;
     margin-bottom: 2rem;

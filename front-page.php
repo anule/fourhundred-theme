@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 
 
-<!-- add jumbotron slideshow -->
+<div class="row jumbotron">
+</div>
+
 <div class="row justify-content-between about">
-  <div class="col-sm-12 col-md-7">
-    this is all about us
+  <div class="col-sm-12 col-md-7" id="about-blurb">
+    Friendly, helpful environment! The doctors are great!
   </div>
 
   <div class="col-sm-12 col-md-4">
