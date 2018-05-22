@@ -91,6 +91,12 @@ nav li {
   .jumbotron {
     height: 12rem;
   }
+  #about-blurb {
+    order: 2;
+  }
+  #about-desc {
+    order: 1;
+  }
   .hours {
     flex-direction: row;
     margin-bottom: 2rem;
