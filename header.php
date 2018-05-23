@@ -17,7 +17,7 @@
     </button> -->
 
 
-        <a href="<?php echo get_bloginfo(wpurl); ?>">Home</a>
+        <a href="<?php echo get_bloginfo(wpurl); ?>" class="nav-item">Home</a>
         <?php wp_list_pages("&title_li=");?>
 
     </nav>

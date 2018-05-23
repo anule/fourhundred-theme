@@ -96,6 +96,7 @@ nav li {
   }
   #about-desc {
     order: 1;
+    text-align: center;
   }
   .hours {
     flex-direction: row;
